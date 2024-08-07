@@ -77,17 +77,19 @@ header {
     height: 100%;
     width: 31%;
     border: 5px solid black;
+    transition: transform 2s ease-in-out;
 
 }
 
 .box:hover {
     background-color: rgb(144, 140, 140);
     transition: 0.3s;
-
+    transform: translateY(-8px);
 }
+
 .athlete-img{
     height: 250px;
-    width: 364px;
+    width: 350px;
 }
 
 .athlete-img img {
@@ -103,13 +105,33 @@ header {
     font-size: 22px;
     text-align: center;
     font-weight: 600;
-    margin: 3px 0;
+    animation: form-title 4s  infinite ease-out 0.3s;
+    background-color: #383737;
+    margin: 3px 10px;
+
+}
+@keyframes form-title {
+    0% {
+       color: rgb(46, 80, 109);
+   }
+
+   50% {
+    color: rgb(15, 126, 200);
+
+}
+   100% {
+       color: rgb(110, 9, 234);
+
+   }
+
 }
 
 .intro h3 {
     font-size: 16px;
     font-weight: 500;
     padding-left: 5px;
+    margin: 5px 10px;
+
 
 }
 
@@ -157,6 +179,7 @@ color:#1b7385;
 
 
 .video{
+    position: relative;
     margin: 20px;
     width: 100%;
     text-align: center;
@@ -167,10 +190,23 @@ color:#1b7385;
     gap: 10px;
 }
 
+.videos{
+    position: relative;
+}
+.play-button{
+    position: absolute;
+    color: #dbd8d5;
+    font-size: 30px;
+    bottom: 70px;
+    z-index: 1;
+  
+}
+
 
 
 /* Form Section  */
 .form {
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -183,14 +219,26 @@ form {
     justify-content: center;
     /* align-items: center; */
     background-color: rgb(185, 184, 183);
+    background-image: url("./images/bg1.jpg");
+    background-size: cover;
+
+
     border: 2px solid black;
-    box-shadow: 3px 3px #888888;
+    box-shadow: 3px 3px #383737;
 
 }
+
+/* .Inquiry-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+} */
 
 form label {
     margin: 4px 3px;
     font-weight: 100;
+    color:white;
 }
 
 form input {
@@ -220,13 +268,14 @@ textarea:focus {
 button {
     padding: 10px;
     margin-top: 10px;
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
+    border: none;
 }
 
 button:hover {
-    background-color: rgb(26, 133, 226);
-    box-shadow: 3px 3px #1b7385;
+    background-color: aliceblue;
+    box-shadow: 3px 3px #153238;
 
     cursor: pointer;
 
@@ -238,27 +287,19 @@ button:hover {
 
 .feedback {
     text-align: center;
-    font-size: 26px;
-    color: rgb(60, 112, 158);
-
+    font-size: 30px;
+    color: rgb(26, 133, 226);
 }
 
 .feedback:hover {
-    animation: form-title 1s ease-in-out 0.3s;
+    
     cursor: pointer;
+    background: -webkit-linear-gradient(#eee, #1c1b1b);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
 }
 
-@keyframes form-title {
-    0% {
-        color: rgb(26, 133, 226);
-    }
 
-    100% {
-        color: rgb(60, 112, 158);
-
-    }
-
-}
 
 .instruction {
     margin: 10px 0px;

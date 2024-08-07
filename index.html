@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
 <body>
   <!-- Header Section-->
 
@@ -38,7 +41,7 @@
       <div class="menu">
         <h1 class="title-name">Cricket</h1>
         <p>
-          Cricket is a popular sport with a long history. It is played with a
+          <i>Cricket</i> is a popular sport with a long history. It is played with a
           bat and ball, and involves two competing sides (teams) of 11
           players. The field is oval with a rectangular area in the middle,
           known as the pitch. Two sets of three sticks, called wickets, are
@@ -97,7 +100,7 @@
       <div class="menu">
         <h1 class="title-name">Football</h1>
         <p>
-          Football, game in which two teams of 11 players, using any part of
+          <i>Football</i> game in which two teams of 11 players, using any part of
           their bodies except their hands and arms, try to maneuver the ball
           into the opposing team’s goal. Only the goalkeeper is permitted to
           handle the ball and may do so only within the penalty area
@@ -170,7 +173,7 @@
       <div class="menu">
         <h1 class="title-name">Kabaddi</h1>
         <p>
-          Kabaddi is a contact team sport played between two teams of seven players, originating in ancient India.[4]
+          <i>Kabaddi</i> is a contact team sport played between two teams of seven players, originating in ancient India.[4]
           The objective of the game is for a single player on offence, referred to as a "raider", to run into the
           opposing team's half of the court, touch out as many of their players as possible, and return to their own
           half of the court, all without being tackled by the defenders in 30 seconds. Points are scored for each player
@@ -235,7 +238,7 @@
       <div class="menu">
         <h1 class="title-name">Basketball</h1>
         <p>
-          Basketball, game played between two teams of five players each on a rectangular court, usually indoors. Each
+          <i>Basketball</i> game played between two teams of five players each on a rectangular court, usually indoors. Each
           team tries to score by tossing the ball through the opponent’s goal, an elevated horizontal hoop and net
           called a basket.
 
@@ -316,9 +319,16 @@
     </div>
   </section>
       <div class="video">
+        <div class="videos">
       <iframe width="800px" height="500"
 src="https://www.youtube.com/embed/tgbNymZ7vqY">
 </iframe>
+</div>
+
+<div class="play-button">
+<i class="fas fa-play"></i>
+</div>
+
 <audio controls>
   <source src="sample.mp3" type="audio/mpeg">
 </audio>
@@ -332,9 +342,10 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
     <div class="container form">
       <form action="#">
       <h1 class="feedback">Enquiry</h1>
+      
       <p class="instruction">Fill out the form below, Inquiry for athlete Jersey and Give Your Jersey Size to Order. </p>
   
-      
+      <!-- <div class="Inquiry-form"> -->
       <label for="Firstname">First name:</label>
       <input type="text" id="fname" name="fname" pattern="[a-zA-Z0-9]{3,16}" title="Firstname must be 3-16 characters long and contain only letters." required autocomplete="off"><br>
  
@@ -357,9 +368,12 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
       <textarea name="message" id="message" rows="4"></textarea>
 
       <button class="send-form" onclick='alert("Form submit Successfully!")' type="submit">Submit</button>
+    <!-- </div> -->
       </form>
+      
 
     </div>
+   
   </section>
 
   <footer class="footer">
